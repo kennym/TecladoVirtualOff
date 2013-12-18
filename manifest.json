@@ -25,7 +25,8 @@
     },
     {
       "matches": [
-        "https://ssecure.familiar.com.py/bancaweb/login.mobi"
+        "https://ssecure.familiar.com.py/bancaweb/login.mobi",
+        "https://ssecure.familiar.com.py/bancaweb/login.web"
       ],
       "js": ["sites/familiar.js"],
       "run_at": "document_end"
