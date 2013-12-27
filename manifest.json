@@ -3,7 +3,7 @@
 
   "name": "Teclado Virtual Off",
   "description": "Borrá el teclado virtual de los sitios de varios bancos.",
-  "version": "1.2",
+  "version": "1.3",
   "homepage_url": "https://github.com/kennym/TecladoVirtualOff",
   "icons": { "19": "icons/19x19.png", "38": "icons/38x38.png", "128": "icons/128x128.png" },
   "permissions": [
@@ -13,10 +13,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://secure.visionbanco.com/bancaweb/index.aspx?msg=Clave%20Incorrecta#",
-        "https://secure.visionbanco.com/bancaweb/#",
-        "https://secure.visionbanco.com/bancaweb/",
-        "https://secure.visionbanco.com/bancaweb"
+        "https://secure.visionbanco.com/bancaweb/*"
       ],
       "js": ["sites/visionbanco.js"],
       "run_at": "document_end"
