@@ -1,30 +1,28 @@
 {
-  "manifest_version": 2,
-
-  "name": "Teclado Virtual Off",
-  "description": "Borrá el teclado virtual de los sitios de varios bancos.",
-  "version": "1.3",
-  "homepage_url": "https://github.com/kennym/TecladoVirtualOff",
-  "icons": { "19": "icons/19x19.png", "38": "icons/38x38.png", "128": "icons/128x128.png" },
-  "permissions": [
-    "https://secure.visionbanco.com/bancaweb"
+   "content_scripts": [ {
+      "js": [ "sites/visionbanco.js" ],
+      "matches": [ "https://secure.visionbanco.com/bancaweb/*" ],
+      "run_at": "document_end"
+   }, {
+      "js": [ "sites/inject.js" ],
+      "matches": [ "https://ssecure.familiar.com.py/bancaweb/login.mobi", "https://ssecure.familiar.com.py/bancaweb/login.web*" ],
+      "run_at": "document_end"
+   }
   ],
-
-  "content_scripts": [
-    {
-      "matches": [
-        "https://secure.visionbanco.com/bancaweb/*"
-      ],
-      "js": ["sites/visionbanco.js"],
-      "run_at": "document_end"
-    },
-    {
-      "matches": [
-        "https://ssecure.familiar.com.py/bancaweb/login.mobi",
-        "https://ssecure.familiar.com.py/bancaweb/login.web"
-      ],
-      "js": ["sites/familiar.js"],
-      "run_at": "document_end"
-    }
-  ]
+    "web_accessible_resources": [
+    "sites/familiar.js"
+	],
+   "description": "Borrá el teclado virtual de los sitios de varios bancos.",
+   "homepage_url": "https://github.com/kennym/TecladoVirtualOff",
+   "icons": {
+      "128": "icons/128x128.png",
+      "19": "icons/19x19.png",
+      "38": "icons/38x38.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2xSQI7Qr05/9igBYhK2XWyT66/AILiQQzj3kANj0+SGcvT+En4+Zn08sdSjuqKgoYqVIW2pBUoI09ce491cN7e5YU+KxX18bWeLQNuuKrzM01Uky7WF/y2qZcDdbtENbH0JZs9u/YRRsTmT6Hbw1opDvAIYxW5FmTYu/nTQSWxVBHGRo8HAQ0Eeq1bhSJ6W8J4Vk7jovZRb7te9ccUMiyJS7fwx3QDZcl9HGUOLtZv5AcVEt0tC+s860ljuU3H/EOwxzwI06pD8tcZjUyOWiMM5TYePSfg61OS+NuYQ4idlwwadiCgKJGaDzlXgm9FsTXsBhgPw9HvVRGouanCXdLwIDAQAB",
+   "manifest_version": 2,
+   "name": "Teclado Virtual Off",
+   "permissions": [ "https://secure.visionbanco.com/bancaweb" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.3"
 }
