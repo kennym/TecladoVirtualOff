@@ -20,9 +20,9 @@
       "38": "icons/38x38.png"
    },
    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2xSQI7Qr05/9igBYhK2XWyT66/AILiQQzj3kANj0+SGcvT+En4+Zn08sdSjuqKgoYqVIW2pBUoI09ce491cN7e5YU+KxX18bWeLQNuuKrzM01Uky7WF/y2qZcDdbtENbH0JZs9u/YRRsTmT6Hbw1opDvAIYxW5FmTYu/nTQSWxVBHGRo8HAQ0Eeq1bhSJ6W8J4Vk7jovZRb7te9ccUMiyJS7fwx3QDZcl9HGUOLtZv5AcVEt0tC+s860ljuU3H/EOwxzwI06pD8tcZjUyOWiMM5TYePSfg61OS+NuYQ4idlwwadiCgKJGaDzlXgm9FsTXsBhgPw9HvVRGouanCXdLwIDAQAB",
-   "manifest_version": 2,
+   "manifest_version": 3,
    "name": "Teclado Virtual Off",
    "permissions": [ "https://secure.visionbanco.com/bancaweb" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.3"
+   "version": "1.3.1"
 }
