@@ -1,17 +1,13 @@
 {
    "content_scripts": [ {
-      "js": [ "sites/visionbanco.js" ],
+      "js": [ "sites/inject_vision.js" ],
       "matches": [ "https://secure.visionbanco.com/bancaweb/*" ],
       "run_at": "document_end"
    }, {
       "js": [ "sites/inject.js" ],
       "matches": [ "https://ssecure.familiar.com.py/bancaweb/login.mobi", "https://ssecure.familiar.com.py/bancaweb/login.web*" ],
       "run_at": "document_end"
-   }
-  ],
-    "web_accessible_resources": [
-    "sites/familiar.js"
-	],
+   } ],
    "description": "Borrá el teclado virtual de los sitios de varios bancos.",
    "homepage_url": "https://github.com/kennym/TecladoVirtualOff",
    "icons": {
@@ -24,5 +20,6 @@
    "name": "Teclado Virtual Off",
    "permissions": [ "https://secure.visionbanco.com/bancaweb" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.3"
+   "version": "1.3.2",
+   "web_accessible_resources": [ "sites/familiar.js", "sites/visionbanco.js" ]
 }
