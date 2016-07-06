@@ -14,4 +14,4 @@ sitios de los siguientes bancos del Paraguay:
 Copyright
 ---------
 
-Copyright © 2013 Kenny Meyer. See LICENSE.txt for further details.
+Copyright © 2013-2016 Kenny Meyer. See LICENSE.txt for further details.
