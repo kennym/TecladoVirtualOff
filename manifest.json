@@ -8,7 +8,7 @@
       "matches": [ "https://ssecure.familiar.com.py/bancaweb/login.mobi", "https://ssecure.familiar.com.py/bancaweb/login.web*" ],
       "run_at": "document_end"
    }, {
-      "js": [ "sites/itau.js" ],
+      "js": [ "sites/itau.js", "sites/itau_pin.js" ],
       "matches": [ "https://www.secure.itau.com.py/*" ],
       "run_at": "document_end"
    } ],
